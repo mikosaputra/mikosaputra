@@ -1,0 +1,112 @@
+ body, h1, h2, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('image.webp'); /* Ganti 'nama-gambar.jpg' dengan nama gambar Anda */
+    background-size: cover; /* Untuk menyesuaikan gambar agar memenuhi seluruh area */
+
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #35a4d8; /* Warna hijau cerah */
+    color: rgb(243, 243, 237);
+    text-align: left;
+    padding: 1rem;
+    border-bottom:  2px solid #62a4ee; /* Garis bawah */
+}
+
+h1 {
+    font-size: 2em; /* Ukuran huruf besar untuk judul utama */
+    text-align: center;
+}
+
+/* Peningkatan Responsif */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+}
+
+/* Gaya Tombol dan Input */
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50; /* Warna border standar */
+    transition: border 0.3s ease;
+    text-align: left;
+}
+
+#searchInput:hover {
+    border: 2px solid #1c851c; /* Warna border saat hover */
+}
+
+/* Gaya Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Padding sedikit lebih besar */
+    text-align: left;
+}
+
+th {
+    background-color: #45a049; /* Warna hijau lebih gelap */
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Gaya Tampilan Detail Penerbangan */
+.flight-details {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-details h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Efek Modal */
+.modal-content {
+    position: relative;
+    background-color: #f1f1f1;
+    margin: 10% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* Efek transisi tambahan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect untuk tombol close */
+.close:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50; /* Warna hijau cerah untuk footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
